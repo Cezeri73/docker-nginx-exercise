@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Murat Kaynar | Kişisel Blog</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 4rem 1rem 3rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      color: var(--muted);
+      max-width: 700px;
+      margin: auto;
+    }
+    nav {
+      margin-top: 1.5rem;
+    }
+    nav a {
+      color: var(--accent);
+      margin: 0 0.8rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2.5rem 1rem;
+    }
+    .card {
+      background: rgba(17, 24, 39, 0.9);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+    .tag {
+      display: inline-block;
+      background: #020617;
+      border: 1px solid #1f2933;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin: 0.2rem;
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 3rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .social a {
+      margin: 0 0.6rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Murat Kaynar</h1>
+  <p>Bilgisayar Mühendisliği öğrencisi • Yazılım geliştirici • Müzik ve teknoloji tutkunu</p>
+  <nav>
+    <a href="#about">Hakkımda</a>
+    <a href="#skills">Yetenekler</a>
+    <a href="#music">Müzik</a>
+    <a href="#projects">Projeler</a>
+    <a href="#contact">İletişim</a>
+  </nav>
+</header>
+
+<section id="about">
+  <div class="card">
+    <h2>Hakkımda</h2>
+    <p>
+      Ben Murat Kaynar. Ankara Yıldırım Beyazıt Üniversitesi Bilgisayar Mühendisliği öğrencisiyim.
+      Yazılım geliştirme, sistemler ve kullanıcı odaklı arayüzler üzerine çalışıyorum.
+      Aynı zamanda müzikle iç içe bir hayatım var; bağlama ve ney çalıyor, şarkı söylüyorum.
+    </p>
+    <p>
+      Öğrenmeye açık, üretmeyi seven ve teknolojiyi anlamlandırarak kullanmaya çalışan biriyim.
+      Front-end, back-end ve Java alanlarında aktif olarak kendimi geliştiriyorum.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="card">
+    <h2>Yetenekler & Teknolojiler</h2>
+    <div class="grid">
+      <div>
+        <h3>Yazılım</h3>
+        <span class="tag">C</span>
+        <span class="tag">Java</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Linux</span>
+      </div>
+      <div>
+        <h3>Tasarım & Medya</h3>
+        <span class="tag">Adobe Premiere Pro</span>
+        <span class="tag">After Effects</span>
+        <span class="tag">Photoshop</span>
+        <span class="tag">Illustrator</span>
+      </div>
+      <div>
+        <h3>Diller</h3>
+        <span class="tag">Türkçe</span>
+        <span class="tag">İngilizce</span>
+        <span class="tag">Kürtçe</span>
+        <span class="tag">Osmanlı Türkçesi</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="music">
+  <div class="card">
+    <h2>Müzik</h2>
+    <p>
+      Müzik benim için sadece bir hobi değil, aynı zamanda bir ifade biçimi.
+      Bağlama ve ney çalıyor, duygusal ve hikâyesi olan eserler üretmeyi seviyorum.
+      Dijital projelerde müzikle görseli birleştirmekten keyif alıyorum.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="card">
+    <h2>Projeler & Deneyim</h2>
+    <p>
+      Patika Academy üzerinden front-end, back-end ve Java eğitimleri aldım.
+      Staj ve kişisel projelerde kullanıcı deneyimini geliştirmeye odaklandım.
+      Sosyal medya ve video içerik üretimi alanında da aktif olarak projeler yürütüyorum.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>İletişim</h2>
+    <p>Benimle iletişime geçmek veya çalışmalarımı takip etmek için:</p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/murat-kaynar-589b1422b" target="_blank">LinkedIn</a>
+      <a href="#">GitHub (eklenebilir)</a>
+      <a href="mailto:example@mail.com">E-posta</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Murat Kaynar • Kişisel Blog
+</footer>
+
+</body>
+</html>
